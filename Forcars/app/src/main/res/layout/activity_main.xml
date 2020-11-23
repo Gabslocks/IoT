@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Bottoms"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/st_rand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="97dp"
+        android:layout_marginBottom="96dp"
+        android:text="Start random"
+        app:layout_constraintBottom_toTopOf="@+id/Data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change_SH" />
+
+    <Button
+        android:id="@+id/change_SH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="7dp"
+        android:text="change Seat Heat"
+        app:layout_constraintStart_toStartOf="@+id/change_cond"
+        app:layout_constraintTop_toBottomOf="@+id/change_cond" />
+
+    <Button
+        android:id="@+id/change_cond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="28dp"
+        android:text="change Condition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/change_SB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="5dp"
+        android:text="change Seat Belt"
+        app:layout_constraintBottom_toTopOf="@+id/change_cond"
+        app:layout_constraintEnd_toEndOf="@+id/change_cond" />
+
+    <Button
+        android:id="@+id/change_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="change light"
+        app:layout_constraintBottom_toTopOf="@+id/change_SB"
+        app:layout_constraintEnd_toEndOf="@+id/change_SB" />
+
+    <Button
+        android:id="@+id/change_battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="11dp"
+        android:text="change battery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change_oil" />
+
+    <Button
+        android:id="@+id/change_fuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="6dp"
+        android:text="change fuel"
+        app:layout_constraintEnd_toEndOf="@+id/change_check"
+        app:layout_constraintTop_toBottomOf="@+id/change_check" />
+
+    <Button
+        android:id="@+id/change_oil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:text="change_oil"
+        app:layout_constraintStart_toStartOf="@+id/change_fuel"
+        app:layout_constraintTop_toBottomOf="@+id/change_fuel" />
+
+    <Button
+        android:id="@+id/change_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="45dp"
+        android:text="change check"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="change check" />
+
+    <TextView
+        android:id="@+id/Data"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="208dp"
+        android:text="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
